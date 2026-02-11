@@ -12,7 +12,7 @@ const SearchCity = ({setCity, setTemp, setWeather}: Props)=>{
 
     const [error, setError]= useState("")
 
-    const API_KEY="20f32cefae37e44c886b3e88e2568b42"
+    const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
     const getWeather = async()=>{
         if(!input) return;
